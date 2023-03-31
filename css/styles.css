@@ -1,1 +1,50 @@
-/* developer styles go here */
+h2 {
+    padding: 1rem;
+}
+
+.horizontal-content {
+    display: flex;
+    overflow: scroll;
+    height: calc(205.7px + 2rem);
+    align-items: center;
+}
+
+.horizontal-content > div {
+    /* flex-grow:0 Can we allow these items to grow above its default width if there's room on the row? No, I want these to stay boxes, my row grows I don't want to continue to grow. I want to be able to scroll across this row. 
+    flex-shrink: 0 No shrink  */
+    /* width: 330px; */
+    flex: 0 0 330px;
+    height: 187px;
+    background-color: #3f1917;
+    margin: 1rem 0.5rem;
+    border-radius: 3px;
+}
+
+.horizontal-content > div:hover,
+.horizontal-content > div:active {
+    flex: 0 0 346.5px;
+    height: 205.7px;
+}
+
+.movie-bg {
+    background-image: url(../img/movie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: bottom center; /* top center 상관 없음. 똑같이 보임*/
+}
+
+.movie-bg h2 {
+    color: #fff;
+}
+
+p {
+    padding: 1.5rem 1rem;
+    max-width: 70ch;
+}
+
+
+
+
+
